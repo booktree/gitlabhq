@@ -1,0 +1,16 @@
+# merge=ours for every tracked file in which gitlab-elearn must differ entirely
+# from the original gitlabhq.
+#
+# Try to keep this list as small as possible to maintain the fork
+# as compatible as possible with the original.
+#
+# For this for work, you need to define a dummy `ours` driver with:
+#
+#   git config --global merge.ours.driver true
+#
+CONTRIBUTING.md merge=ours
+README.md merge=ours
+app/assets/images/logo-black.png merge=ours
+app/assets/images/logo-white.png merge=ours
+public/favicon.ico merge=ours
+public/gitlab_logo.png merge=ours

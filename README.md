@@ -1,134 +1,127 @@
-## GitLab: self hosted Git management software
+# Booktree
 
-![logo](https://gitlab.com/gitlab-org/gitlab-ce/raw/master/public/gitlab_logo.png)
+**Book Development** with **Version Control**
 
-![animated-screenshots](https://gist.github.com/fnkr/2f9badd56bfe0ed04ee7/raw/4f48806fbae97f556c2f78d8c2d299c04500cb0d/compiled.gif)
+<img alt="logo" src="https://raw.github.com/cirosantilli/booktree/master/public/gitlab_logo.png" width="256"></img>
 
-### Gitlab is open source software to collaborate on code
+**Mission**: increase the quality / price ratio of textual learning material: textbooks, papers, tutorials.
 
-* Manage git repositories with fine grained access controls that keep your code secure
-* Perform code reviews and enhance collaboration with merge requests
-* Each project can also have an issue tracker and a wiki
-* Used by more than 100,000 organizations, GitLab is the most popular solution to manage git repositories on-premises
-* Completely free and open source (MIT Expat license)
-* Powered by Ruby on Rails
+# Intro for programmers
 
-### Canonical source
+- **GitHub clone**
+- optimized for **book development and publishing** through [these features](#intended-features)
+- accessible to **non programmers**
+- powered by **[GitLab](https://github.com/gitlabhq/gitlabhq)**, the best open source GitHub clone:
+    - [GitHub top 30 by stars](https://github.com/search?p=3&q=stars%3A%3E10000&ref=searchresults&type=Repositories)
+    - [6 people working full time with service revenue](https://www.gitlab.com/about/)
+    - [Feature set close to GitHub](https://www.gitlab.com/features/)
 
-* The source of GitLab Communinity Edition is [hosted on GitLab Cloud](https://gitlab.com/gitlab-org/gitlab-ce/) and there are mirrors to make [contributing](CONTRIBUTING.md) as easy as possible.
+# Intro for non-programmers
 
-### Code status
+- **create**: edit and compile **markdown / Latex** input **online or locally**
+- **publish**: share **HTML / PDF / EPUB** online **with one click**
+- **sell**: set the price, buyers **pay**
 
-* [![build status](https://ci.gitlab.org/projects/1/status.png?ref=master)](https://ci.gitlab.org/projects/1?ref=master) on ci.gitlab.org (master branch)
+with **Version control** because we adapted:
 
-* [![Code Climate](https://codeclimate.com/github/gitlabhq/gitlabhq.png)](https://codeclimate.com/github/gitlabhq/gitlabhq)
+- IT industry **collaboration** techniques **Git** + **Bugtracker**
+- to **non programmer** book developers
 
-* [![Coverage Status](https://coveralls.io/repos/gitlabhq/gitlabhq/badge.png?branch=master)](https://coveralls.io/r/gitlabhq/gitlabhq)
+If you are not familiar with version control (Git, SVN, Mercurial) [read this](doc/new-to-source-control.md).
 
-### Resources
+# Intended Features
 
-* [GitLab.com](https://www.gitlab.com/) includes information about [subscriptions](https://www.gitlab.com/subscription/), [consultancy](https://www.gitlab.com/consultancy/), the [community](https://www.gitlab.com/community/) and the [hosted GitLab Cloud](https://www.gitlab.com/cloud/).
+These are key features we intend to implement:
 
-* [GitLab Enterprise Edition](https://www.gitlab.com/gitlab-ce/) offers additional features that are useful for larger organizations (100+ users).
+- when users push or save from the web UI **markdown or LaTeX input**, we **compile and host HTML, PDF, EPUB output**
 
-* [GitLab CI](https://www.gitlab.com/gitlab-ci/) is a continuous integration (CI) server that is easy to integrate with GitLab.
+- Js editor with **side by side source / preview** view for individual files, compatible with the on push compiler.
 
-* Unofficial third-party [iPhone app](http://gitlabcontrol.com/) and [Android app](https://play.google.com/store/apps/details?id=com.bd.gitlab&hl=en) for GitLab
+- **everything** can be done via the web interface: `mv`, `add`, `status`, `diff`.
 
-### Requirements
+    Non programmers:
 
-* Ubuntu/Debian/CentOS/RHEL**
-* ruby 1.9.3+
-* git 1.7.10+
-* redis 2.0+
-* MySQL or PostgreSQL
+    - learn Git from the browser
+    - don't need to install anything
 
-** More details are in the [requirements doc](doc/install/requirements.md)
+- publishers can **set a price** for the compiled output, readers **pay** to have it.
 
-### Installation
+- **metrics for everything**: users, projects, groups, issues, comments, tags.
 
-#### Official installation methods
+    Help people find the best material, and give the best contributors due credit.
 
-* [GitLab packages](https://www.gitlab.com/downloads/) **recommended** These packages contain GitLab and all its depencies (Ruby, PostgreSQL, Redis, Nginx, Unicorn, etc.). They are made with [omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md) that also contains the installation instructions.
+# Features
 
-* [GitLab Chef Cookbook](https://gitlab.com/gitlab-org/cookbook-gitlab/blob/master/README.md) This cookbook can be used both for development installations and production installations. If you want to [contribute](CONTRIBUTE.md) to GitLab we suggest you follow the [development installation on a virtual machine with Vagrant](https://gitlab.com/gitlab-org/cookbook-gitlab/blob/master/doc/development.md) instructions to install all testing dependencies.
+There are currently no key features where we differ from GitLab. Everything was merged back.
 
-* [Manual installation guide](doc/install/installation.md) This guide to set up a production server on Ubuntu offers detailed and complete step-by-step instructions.
+Key features present in GitLab include:
 
-#### Third party one-click installers
+- bug tracker with merge requests.
 
-* [Digital Ocean 1-Click Application Install](https://www.digitalocean.com/blog_posts/host-your-git-repositories-in-55-seconds-with-gitlab) Have a new server up in 55 seconds. Digital Ocean uses SSD disks which is great for an IO intensive app such as GitLab. We recommend selecting a droplet with [1GB of memory](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/requirements.md).
+    Treat every reader questions and suggestions as issues or merge requests.
 
-* [BitNami one-click installers](http://bitnami.com/stack/gitlab) This package contains both GitLab and GitLab CI. It is available as installer, virtual machine or for cloud hosting providers (Amazon Web Services/Azure/etc.).
+    Never answer the same question twice.
 
-#### Unofficial installation methods
+# We vs Them
 
-* [GitLab recipes](https://gitlab.com/gitlab-org/gitlab-recipes/) repository with unofficial guides for using GitLab with different software (operating systems, webservers, etc.) than the official version.
+Similar projects and features which they lack.
 
-* [Installation guides](https://github.com/gitlabhq/gitlab-public-wiki/wiki/Unofficial-Installation-Guides) public wiki with unofficial guides to install GitLab on different operating systems.
+- [GitHub](https://github.com): no PDF output and sale, CLI-free workflow very limited (no `commit --amend`, `git add`, etc.).
 
-### New versions and upgrading
+- [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review.
 
-Since 2011 GitLab is released on the 22nd of every month. Every new release includes an [upgrade guide](doc/update) and new features are detailed in the [Changelog](CHANGELOG).
+- [O'Reilly Atlas](https://atlas.oreilly.com/) seems to do Git + publishing via GitLab. Waiting to be granted on request access to the private beta review it. 
 
-It is recommended to follow a monthly upgrade schedule. Security releases come out when needed. For more information about the release process see the documentation for [monthly](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/release/monthly.md) and [security](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/release/security.md) releases.
+- [OERPUB](http://oerpub.org/collaborate) is building:
 
-* Features that will be in the next releases are listed on the [feature request forum](http://feedback.gitlab.com/forums/176466-general) with the status [started](http://feedback.gitlab.com/forums/176466-general/status/796456) and [completed](http://feedback.gitlab.com/forums/176466-general/status/796457).
+    - [GitHub book editor](https://github.com/oerpub/github-bookeditor): a web editor that saves to GitHub via the API
+    - [pdf-ci](https://github.com/philschatz/pdf-ci): PDF compilation on push via GitHub hooks
 
-### Run in production mode
+    These two tools are part of what we want to build, but we feel that using GitLab instead of GitHub is the way to go because it allows us to adapt the web frontend code and interface with it more tightly.
 
-The Installation guide contains instructions on how to download an init script and run it automatically on boot. You can also start the init script manually:
+- projects with no Git interaction: some have limited Git-like capabilities like versioning, but none reach the full power of a Git web interface.
 
-    sudo service gitlab start
+    - with book sale:
+        - [Leanpub](https://leanpub.com): no LaTeX, closed source
+        - [Softcover](https://softcover.io): no editing web interface
+        - [Blurb](http://www.blurb.com/company-profile): downloadable editors for Windows / Mac, not possible to create book for free
+        - [guides.co](http://www.guides.co): WYSIWIG editor, sell on Amazon
+    - without book sale:
+        - [Connexions](http://cnx.org/)
+        - [ShareLaTeX](https://www.sharelatex.com): no markdown, versioning on free version. Has Git based back-end.
+        - [WriteLaTeX](https://www.writelatex.com): no markdown, branches or merge requests, closed source.
 
-or by directly calling the script
+# Business model
 
-     sudo /etc/init.d/gitlab start
+Optimize for world **happiness**:
+- if your project is:
+    - **open source**, you get **all** features for **free**
+    - **closed source**, you **may** have to **pay** based on repository size / number of compiles
+- **support**: we are **installable locally** for free and we sell **technical support**.
+- **book sale**. Authors can sell books, and we take a small percentage of their profit.
+- we will stay almost entirely **open source** forever, so that anyone can contribute with great features.
 
-Please login with root / 5iveL!fe
+# Why the idea is good
 
-### Run in development mode
+- The current coding / project management workflow is close to **optimal** for creation of code, and is used for every single useful software project today.
 
-Consider setting up the development environment with [the cookbook](https://gitlab.com/gitlab-org/cookbook-gitlab/blob/master/README.md#installation).
+    Books are **very similar** to code, but their development process is still on the **paper age**.
 
-Copy the example development unicorn configuration file
+    We can **reuse** much of the existing coding infra structure to develop books and manage classes.
 
-    cp config/unicorn.rb.example.development config/unicorn.rb
+- Students are greatly motivated by improving and creating books **themselves**.
 
-Start it with [Foreman](https://github.com/ddollar/foreman)
+- Teachers can collaborate with other students and teachers from **all over the world** to create the perfect learning environment, and do their jobs at the same time.
 
-    bundle exec foreman start -p 3000
+- There are other projects which have **insufficient subsets** of what must be done, some of which are already financially bootstrapped.
 
-or start each component separately
+    Because of our code reuse, we can offer a better product than them.
 
-    bundle exec rails s
-    script/background_jobs start
+- Specializing in books means that we can compile the books ourselves since there are few possible input / output types, allowing:
 
-And surf to [localhost:3000](http://localhost:3000/) and login with root / 5iveL!fe
+    - users to develop from the web UI without installing anything
+    - users to sell the compiled output from our website
 
-### Run the tests
+# Contributing
 
-* Run all tests
-
-        bundle exec rake test
-
-* [RSpec](http://rspec.info/) unit and functional tests
-
-        All RSpec tests: bundle exec rake spec
-
-        Single RSpec file: bundle exec rspec spec/controllers/commit_controller_spec.rb
-
-* [Spinach](https://github.com/codegram/spinach) integration tests
-
-        All Spinach tests: bundle exec rake spinach
-
-        Single Spinach test: bundle exec spinach features/project/issues/milestones.feature
-
-
-### Documentation
-
-All documentation can be found on [doc.gitlab.com/ce/](http://doc.gitlab.com/ce/).
-
-### Getting help
-
-Please see [Getting help for GitLab](https://www.gitlab.com/getting-help/) on our website for the many options to get help.
+If you want to contribute to this project, see the [CONTRIBUTING.md](CONTRIBUTING.md).
