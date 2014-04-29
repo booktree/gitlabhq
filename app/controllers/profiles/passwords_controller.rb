@@ -31,6 +31,11 @@ class Profiles::PasswordsController < ApplicationController
   end
 
   def update
+    if @user.username == 'demo'
+      redirect_to edit_profile_password_path, alert: 'You cannot change the password of the shared demo user. Naughty.'
+      return
+    end
+
     password_attributes = params[:user].select do |key, value|
       %w(password password_confirmation).include?(key.to_s)
     end

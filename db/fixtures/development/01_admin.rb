@@ -1,6 +1,5 @@
 User.seed(:id, [
   {
-    id: 1,
     name: "Administrator",
     email: "admin@local.host",
     username: 'root',

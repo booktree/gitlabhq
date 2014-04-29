@@ -4,35 +4,40 @@
   %body.ui_basic.login-page
     = render "layouts/flash"
     .container
-      .content
+      .content{style: "margin:0px auto; width:400px;"}
         %center
           %h1 Booktree
-          %p.light
+          %p
             %strong Book development
             with
             %strong Version control
             %br
-            = link_to "Introduction and Source code", "https://github.com/cirosantilli/booktree"
-    %hr
-    %center
-      #{link_to "Public projects", public_projects_path}
+            = link_to "Features and Source code", "https://github.com/cirosantilli/booktree"
+        %p
+          To get started either:
+          %br
+          \- sign in with username "demo" and password "12345678"
+          %br
+          \- sign up and sign in
+          %br
+          \- browse #{link_to "public projects", public_projects_path}
     %hr
     .container
       .content
         = yield
-    %hr
-    %center
-      %br
-      Powered by
-      %strong awesome
-      software from
-      = link_to "GitLab", "https://github.com/gitlabhq/gitlabhq"
-      %br
-      %strong Not
-      affiliated with
-      = link_to "GitLab.com", "https://gitlab.com"
-      %br
-      We are on
-      %strong alpha
-      so
-      %strong make backups!
+        %hr
+        %center
+          %br
+          Powered by
+          %strong awesome
+          software from
+          = link_to "GitLab", "https://github.com/gitlabhq/gitlabhq"
+          %br
+          %strong Not
+          affiliated with
+          = link_to "GitLab.com", "https://gitlab.com"
+          %br
+          We are on
+          %strong alpha
+          so
+          %strong make backups!
