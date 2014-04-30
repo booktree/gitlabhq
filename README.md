@@ -4,7 +4,10 @@
 
 <img alt="logo" src="https://raw.github.com/cirosantilli/booktree/master/public/gitlab_logo.png" width="256"></img>
 
-**Mission**: increase the quality / price ratio of textual learning material: textbooks, papers, tutorials.
+**Mission**:
+
+- increase the quality / price ratio of textual learning material: textbooks, papers, tutorials.
+- motivate readers (students) to learn by contributing.
 
 # Intro for programmers
 
