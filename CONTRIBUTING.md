@@ -14,6 +14,7 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
     - `accepting-pr`: the project admins endorse this `enhancement`, and will definitely take at submitted patches.
     - `howto`: the proposal needs to be made more precise before `accepting-mr`.
+    - `dep`: there is another enhancement which needs to be implemented before this one.
     - `hard1`, `hard2`, `hard3`: expected implementation difficulty: low, medium, high.
     - `prio1`, `prio2`, `prio3`: importance of the feature: low, medium, high.
     - `wontfix`: feature request was declined.
