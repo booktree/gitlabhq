@@ -6,9 +6,7 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
 -   `duplicate`
 
--   `question`: usage question for something that is already possible and so convenient it does not deserve a new feature.
-
--   `enhancement`: requests that something be modified, although it is not clearly broken as in a `bug`. Sometimes the difference between both is subjective.
+-   `feature-request`: requests that something be modified, although it is not clearly broken as in a `bug`. Sometimes the difference between both is subjective.
 
     Unlike GitLab, we treat feature requests in the GitHub issue tracker.
 
@@ -19,6 +17,8 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
     - `prio1`, `prio2`, `prio3`: importance of the feature: low, medium, high.
     - `wontfix`: feature request was declined.
     - `WIP`: work in progress: the pull request is not yet ready to be merged.
+
+-   `question`: usage question for something that is already possible and so convenient it does not deserve a new feature.
 
 If you don't have the permission to add a label to your issue, please add it to the title of the issue as:
 
