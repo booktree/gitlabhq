@@ -20,6 +20,11 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
 -   `question`: usage question for something that is already possible and so convenient it does not deserve a new feature.
 
+-   `gitlab` prefixed labels give status of the request on GitLab.
+
+    - `gitlab-timeout`: 2 weeks passed without a favorable reply from GitLab Team.
+    - `gitlab-wontfix`: GitLab declined the feature. It might still be acceptable in this project.
+
 If you don't have the permission to add a label to your issue, please add it to the title of the issue as:
 
     [WIP][hard2] Do something new.
@@ -102,7 +107,15 @@ Major points in which our design goals differ from GitLab include:
 
     -   Make a pull request directly to GitLab on GitHub.
 
-    -   After 2 weeks without answer from the GitLab Team or decline, merge on `mine` and make a pull request to us.
+    -   If the GitLab Team either:
+
+        - takes more than 2 weeks to acceptint-mr or show a favorable view
+        - declines
+
+        merge on `mine` and make a pull request to us with one of following labels respectively:
+
+        - `gitlab-timeout`
+        - `gitlab-wontfix`
 
     -   If it is accepted on GitLab, it will become available for to our project when we merge to the next stable version.
 
