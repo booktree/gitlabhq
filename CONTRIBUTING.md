@@ -70,24 +70,46 @@ This project will attempt to:
 - merge back any contributions which also make sense for GitLab.
 - incorporate every new version of GitLab
 
-It is expected however that some changes cannot be merged back. Files in which incompatibilities are certain are listed under `.gitattributes` with `merge=ours`.
+Because we have slightly different design goals, some changes will not be merged back.
 
-One of the points in which our philosophy differs from GitLab is that there is only meant to be one server on the entire world for our system, instead of everyone hosting their own. This is of course possible if you wish to do so, but the real strength of the system comes from collaboration, so you are not encouraged to host your own (unless as a proof that one hosting service is better than another).
+Files which differ entirely from GitLab will be listed under `.gitattributes` with `merge=ours`.
 
-- if your patch can be merged back into GitLab:
+We will merge GitLab stable releases into our system as soon as possible after a stable release comes out.
 
-    - do it on `origin`
+## Design goal divergences
 
-    - make a pull request directly to GitLab
+Major points in which our design goals differ from GitLab include:
 
-    - after 2 weeks without any answer from the GitLab Team, merge on `mine` and make a pull request to us
+-   we give greater focus to a SaaS service rather than local installs.
 
-            We may accept it even if GitlabHQ refused or ignored it, since we have different goals.
+    We intend to provide a service different enough from GitHub to be competitive.
 
-    - if it is accepted on GitLab, it will become available for to our project when we update to the next stable version.
+    It is more advantageous to the world if all books can be found at single website.
 
-        We will merge GitLab stable releases into our system as soon as possible after the release comes out, which happened the 22nd of every month.
+    Local installs will still be supported.
 
-- if your patch only makes sense for project:
+-   we give greater focus to web interface Git and editing operations.
 
-    Do it on `mine`. Pull request directly and only to this project.
+    We want non-programmers to use ours system, and therefore everything must be doable from the web interface.
+
+## Where to submit
+
+-   if your patch also makes sense for GitLab:
+
+    -   Do it on `origin`.
+
+    -   Add it to `CHANGELOG`.
+
+    -   Make a pull request directly to GitLab on GitHub.
+
+    -   After 2 weeks without answer from the GitLab Team or decline, merge on `mine` and make a pull request to us.
+
+    -   If it is accepted on GitLab, it will become available for to our project when we merge to the next stable version.
+
+-   if your patch only makes sense for project:
+
+    - Do it on `mine`.
+
+    - Add it to the `CHANGELOG_FORK`.
+
+    - Pull request directly and only to this project.
