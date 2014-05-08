@@ -12,7 +12,8 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
     Labels that only apply to `enhancements`:
 
-    - `accepting-pr`: the project admins endorse this `enhancement`, and will definitely take at submitted patches 
+    - `accepting-pr`: the project admins endorse this `enhancement`, and will definitely take at submitted patches.
+    - `howto`: the proposal needs to be made more precise before `accepting-mr`.
     - `hard1`, `hard2`, `hard3`: expected implementation difficulty: low, medium, high.
     - `prio1`, `prio2`, `prio3`: importance of the feature: low, medium, high.
     - `wontfix`: feature request was declined.
