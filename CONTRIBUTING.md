@@ -6,7 +6,7 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
 -   `duplicate`
 
--   `feature-request`: requests that something be modified, although it is not clearly broken as in a `bug`. Sometimes the difference between both is subjective.
+-   `enhancement`: requests that something be modified, although it is not clearly broken as in a `bug`. Sometimes the difference between both is subjective.
 
     Unlike GitLab, we treat feature requests in the GitHub issue tracker.
 
