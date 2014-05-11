@@ -24,6 +24,7 @@ The [GitLab guidelines](https://github.com/gitlabhq/gitlabhq/blob/master/CONTRIB
 
 -   `gitlab` prefixed labels give status of the request on GitLab.
 
+    - `gitlab-accepting-pr`: GitLab has accepted the feature, and it is also particularly important for this project.
     - `gitlab-timeout`: 2 weeks passed without a favorable reply from GitLab Team.
     - `gitlab-wontfix`: GitLab declined the feature. It might still be acceptable in this project.
 
