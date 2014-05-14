@@ -93,6 +93,7 @@ Similar projects and features which they lack.
         - [Softcover](https://softcover.io): no editing web interface
         - [Blurb](http://www.blurb.com/company-profile): downloadable editors for Windows / Mac, not possible to create book for free
         - [guides.co](http://www.guides.co): WYSIWIG editor, sell on Amazon
+        - [PressBooks](http://pressbooks.com/): WordPress based. WYSIWG HTML input, PDF, EPUB output.
     -   without book sale:
         - [Connexions](http://cnx.org/)
         - [ShareLaTeX](https://www.sharelatex.com): no markdown, versioning on free version. Has Git based back-end.
