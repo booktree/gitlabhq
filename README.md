@@ -94,6 +94,7 @@ Similar projects and features which they lack.
         - [Blurb](http://www.blurb.com/company-profile): downloadable editors for Windows / Mac, not possible to create book for free
         - [guides.co](http://www.guides.co): WYSIWIG editor, sell on Amazon
         - [PressBooks](http://pressbooks.com/): WordPress based. WYSIWG HTML input, PDF, EPUB output.
+        - [Inkling Habitat](https://habitat.inkling.com): WYSIWIG editor, limited versioning, issue tracker.
     -   without book sale:
         - [Connexions](http://cnx.org/)
         - [ShareLaTeX](https://www.sharelatex.com): no markdown, versioning on free version. Has Git based back-end.
