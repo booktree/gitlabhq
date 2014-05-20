@@ -73,32 +73,36 @@ For a detailed list of implemented features in which we differ from GitLab check
 
 Similar projects and features which they lack.
 
+Closed source unless noted otherwise.
+
 -   [GitHub](https://github.com): no PDF output and sale, CLI-free workflow very limited (no `commit --amend`, `git add`, etc.).
 
 -   [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review.
 
--   [O'Reilly Atlas](https://atlas.oreilly.com/) seems to do Git + publishing via GitLab. Waiting to be granted on request access to the private beta review it. 
+-   [O'Reilly Atlas](https://atlas.oreilly.com/) seems to do Git + publishing via GitLab. Waiting to be granted on request access to the private beta review it.
 
--   [OERPUB](http://oerpub.org/collaborate) is building:
+-   [OERPUB](http://oerpub.org/collaborate) is building the open source:
 
     - [GitHub book editor](https://github.com/oerpub/github-bookeditor): a web editor that saves to GitHub via the API
     - [pdf-ci](https://github.com/philschatz/pdf-ci): PDF compilation on push via GitHub hooks
 
     These two tools are part of what we want to build, but we feel that using GitLab instead of GitHub is the way to go because it allows us to adapt the web frontend code and interface with it more tightly.
 
+-   [Penflip](https://www.penflip.com). Markdown input. Git based: offers clone URL, but not local compilation. Creating full Git web including merge requests, but not yet as powerful as GitLab's. TODO: what is their web interface based on?
+
 -   projects with no Git interaction: some have limited Git-like capabilities like versioning, but none reach the full power of a Git web interface.
 
     -   with book sale:
-        - [Leanpub](https://leanpub.com): no LaTeX, closed source
-        - [Softcover](https://softcover.io): no editing web interface
-        - [Blurb](http://www.blurb.com/company-profile): downloadable editors for Windows / Mac, not possible to create book for free
-        - [guides.co](http://www.guides.co): WYSIWIG editor, sell on Amazon
-        - [PressBooks](http://pressbooks.com/): WordPress based. WYSIWG HTML input, PDF, EPUB output.
-        - [Inkling Habitat](https://habitat.inkling.com): WYSIWIG editor, limited versioning, issue tracker.
+        - [Leanpub](https://leanpub.com):                 no LaTeX, closed source
+        - [Softcover](https://softcover.io):              no editing web interface. Open source compiler, web interface closed.
+        - [Blurb](http://www.blurb.com/company-profile):  downloadable editors for Windows / Mac, not possible to create book for free
+        - [guides.co](http://www.guides.co):              WYSIWYG editor, sell on Amazon
+        - [PressBooks](http://pressbooks.com/):           WordPress based. WYSIWYG HTML input, PDF, EPUB output.
+        - [Inkling Habitat](https://habitat.inkling.com): WYSIWYG editor, limited versioning, issue tracker.
     -   without book sale:
-        - [Connexions](http://cnx.org/)
-        - [ShareLaTeX](https://www.sharelatex.com): no markdown, versioning on free version. Has Git based back-end.
-        - [WriteLaTeX](https://www.writelatex.com): no markdown, branches or merge requests, closed source.
+        - [Connexions](http://cnx.org/).            open source, no Markdown.
+        - [ShareLaTeX](https://www.sharelatex.com): open sourced early 2014, no Markdown, versioning on free version. Hidden Git back-end.
+        - [WriteLaTeX](https://www.writelatex.com): no Markdown, branches or merge requests, closed source.
 
 # Business model
 
