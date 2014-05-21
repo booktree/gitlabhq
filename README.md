@@ -77,32 +77,42 @@ Closed source unless noted otherwise.
 
 -   [GitHub](https://github.com): no PDF output and sale, CLI-free workflow very limited (no `commit --amend`, `git add`, etc.).
 
--   [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review.
+-   [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review. A third party informed me that they have discontinued.
 
 -   [O'Reilly Atlas](https://atlas.oreilly.com/) seems to do Git + publishing via GitLab. Waiting to be granted on request access to the private beta review it.
 
 -   [OERPUB](http://oerpub.org/collaborate) is building the open source:
 
-    - [GitHub book editor](https://github.com/oerpub/github-bookeditor): a web editor that saves to GitHub via the API
-    - [pdf-ci](https://github.com/philschatz/pdf-ci): PDF compilation on push via GitHub hooks
+    - [GitHub book editor](https://github.com/oerpub/github-bookeditor): a web editor that saves to GitHub via the API.
+    - [pdf-ci](https://github.com/philschatz/pdf-ci): PDF compilation on push via GitHub hooks.
 
     These two tools are part of what we want to build, but we feel that using GitLab instead of GitHub is the way to go because it allows us to adapt the web frontend code and interface with it more tightly.
 
 -   [Penflip](https://www.penflip.com). Markdown input. Git based: offers clone URL, but not local compilation. Creating full Git web including merge requests, but not yet as powerful as GitLab's. TODO: what is their web interface based on?
 
+-   [Authorea](https://www.authorea.com). Markdown and LaTeX input. Git backend as it shows hashes on URLs. Basic versioning. TODO: pull requests?
+
+-   [Beegit](https://beegit.com/). Private beta, waiting for review. Deducing from presentation video: Markdown input, multi file project, version control, file browser.
+
+-   [Editorially](https://editorially.com). Markdown input. Shut down May 30 2014.
+
+-   [prose.io](https://github.com/prose/prose). GitHub + GitHub Pages editor frontend.
+
+-   [Draft](https://draftin.com). Markdown input, single file input/output only. Limited version control and merge request-like functionality.
+
 -   projects with no Git interaction: some have limited Git-like capabilities like versioning, but none reach the full power of a Git web interface.
 
     -   with book sale:
-        - [Leanpub](https://leanpub.com):                 no LaTeX, closed source
-        - [Softcover](https://softcover.io):              no editing web interface. Open source compiler, web interface closed.
-        - [Blurb](http://www.blurb.com/company-profile):  downloadable editors for Windows / Mac, not possible to create book for free
-        - [guides.co](http://www.guides.co):              WYSIWYG editor, sell on Amazon
-        - [PressBooks](http://pressbooks.com/):           WordPress based. WYSIWYG HTML input, PDF, EPUB output.
-        - [Inkling Habitat](https://habitat.inkling.com): WYSIWYG editor, limited versioning, issue tracker.
+        - [Leanpub](https://leanpub.com).                 No LaTeX, closed source.
+        - [Softcover](https://softcover.io).              No editing web interface. Open source compiler, web interface closed.
+        - [Blurb](http://www.blurb.com/company-profile).  Downloadable editors for Windows / Mac, not possible to create book for free.
+        - [guides.co](http://www.guides.co).              WYSIWYG editor, sell on Amazon
+        - [PressBooks](http://pressbooks.com/).           WordPress based. WYSIWYG HTML input, PDF, EPUB output.
+        - [Inkling Habitat](https://habitat.inkling.com). WYSIWYG editor, versioning, issue tracker. Browser plugin (currently no Firefox). 80M investments between 2009 and 2014.
     -   without book sale:
-        - [Connexions](http://cnx.org/).            open source, no Markdown.
-        - [ShareLaTeX](https://www.sharelatex.com): open sourced early 2014, no Markdown, versioning on free version. Hidden Git back-end.
-        - [WriteLaTeX](https://www.writelatex.com): no Markdown, branches or merge requests, closed source.
+        - [Connexions](http://cnx.org/).            Open source, no Markdown.
+        - [ShareLaTeX](https://www.sharelatex.com). Open sourced early 2014, no Markdown, versioning on free version. Hidden Git back-end.
+        - [WriteLaTeX](https://www.writelatex.com). No Markdown, branches or merge requests, closed source.
 
 # Business model
 
