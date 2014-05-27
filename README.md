@@ -40,7 +40,7 @@ These are key features we intend to implement:
 
 -   Js editor with **side by side source / preview** view for individual files, compatible with the on push compiler.
 
--   **everything** can be done via the web interface: `mv`, `add`, `status`, `diff`.
+-   **everything** can be done via the web interface: `mv`, `add`, `status`, `diff`, multi-file commits, revolve merge conflicts.
 
     Non programmers:
 
