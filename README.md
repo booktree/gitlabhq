@@ -11,10 +11,10 @@
 
 # Intro for programmers
 
-- **GitHub clone**
-- optimized for **book development and publishing** through [these features](#intended-features)
-- accessible to **non programmers**
-- powered by **[GitLab](https://github.com/gitlabhq/gitlabhq)**, the best open source GitHub clone:
+-   **GitHub clone**
+-   optimized for **book development and publishing** through [these features](#intended-features)
+-   accessible to **non programmers**
+-   powered by **[GitLab](https://github.com/gitlabhq/gitlabhq)**, the best open source GitHub clone:
     - [GitHub top 30 by stars](https://github.com/search?p=3&q=stars%3A%3E10000&ref=searchresults&type=Repositories)
     - [6 people working full time with service revenue](https://www.gitlab.com/about/)
     - [Feature set close to GitHub](https://www.gitlab.com/features/)
@@ -75,13 +75,15 @@ Similar projects and features which they lack.
 
 Closed source unless noted otherwise.
 
+Big wiki comparison table at: <https://github.com/cirosantilli/booktree/wiki/Alternatives>
+
 - [GitHub](https://github.com): no PDF output and sale, CLI-free workflow very limited (no `commit --amend`, `git add`, etc.). Has mentioned interest in book development.
 
-- [Inkling Habitat](https://habitat.inkling.com). WYSIWYG editor, versioning, issue tracker. Browser plugin (currently no Firefox). 80M investments between 2009 and 2014.
+- [Inkling Habitat](https://habitat.inkling.com). WYSIWYG editor, versioning, issue tracker. Browser plugin (currently no Firefox). 50M investments between 2009 and 2014, 9 collaborators (multiple products).
 
 - [O'Reilly Atlas](https://atlas.oreilly.com/) seems to do Git + publishing via GitLab. Waiting to be granted on request access to the private beta review it.
 
-- [Penflip](https://www.penflip.com). Markdown input. Git based: offers clone URL, but not local compilation. Creating full Git web including merge requests, but not yet as powerful as GitLab's. TODO: what is their web interface based on?
+- [Penflip](https://www.penflip.com). Markdown input. Git based: offers clone URL, but not local compilation tools. Simplified Git web including merge requests. TODO: what is their web interface based on?
 
 -   [OERPUB](http://oerpub.org/collaborate) is building the open source:
 
@@ -90,23 +92,19 @@ Closed source unless noted otherwise.
 
     These two tools are part of what we want to build, but we feel that using GitLab instead of GitHub is the way to go because it allows us to adapt the web frontend code and interface with it more tightly.
 
-- [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review. A third party informed me that they have discontinued.
-
-- [ShareLaTeX](https://www.sharelatex.com). Open sourced early 2014, no Markdown, versioning on free version, hidden Git back-end.
-
-- [Authorea](https://www.authorea.com). Markdown and LaTeX input. Git backend as it shows hashes on URLs. Basic versioning. TODO: pull requests?
-
-- [Beegit](https://beegit.com/). Private beta, waiting for review. Deducing from presentation video: Markdown input, multi file project, version control, file browser.
+- [ShareLaTeX](https://www.sharelatex.com). Open sourced early 2014, no Markdown, versioning on free version, hidden Git back-end, [at least 94k users](https://twitter.com/henryoswald/status/459367445946707968).
 
 - [WriteLaTeX](https://www.writelatex.com). No Markdown, branches or merge requests, closed source.
 
-- [Editorially](https://editorially.com). Markdown input. Shut down May 30 2014.
+- [Authorea](https://www.authorea.com). Markdown and LaTeX input. Git backend as it shows hashes on URLs. Basic versioning. TODO: pull requests? 3 authors. Focus on PDF and Academia.
+
+- [Beegit](https://beegit.com/). Private beta, waiting for review. Deducing from presentation video: Markdown input, multi file project, version control, file browser. Possibly GitLab based. 3 collaborators.
 
 - [Draft](https://draftin.com). Markdown input, single file input/output only. Limited version control and merge request-like functionality.
 
 - [Connexions](http://cnx.org/). Open source, no Markdown.
 
-- [prose.io](https://github.com/prose/prose). GitHub + GitHub Pages editor frontend.
+- [prose.io](https://github.com/prose/prose). GitHub + GitHub Pages editor frontend. Open source.
 
 - [Leanpub](https://leanpub.com). No LaTeX, book sale.
 
@@ -117,6 +115,13 @@ Closed source unless noted otherwise.
 - [guides.co](http://www.guides.co). WYSIWYG editor, sell on Amazon.
 
 - [PressBooks](http://pressbooks.com/). WordPress based. WYSIWYG HTML input, PDF, EPUB output.
+
+Discontinued projects:
+
+- [Banyan](https://banyan.co): seems to do exactly the same as this project via GitLab. Waiting for them to open public beta (signup currently disabled) to review. A third party informed me that they have discontinued.
+
+- [Editorially](https://editorially.com). Markdown input. Shut down May 30 2014.
+
 
 # Business model
 
